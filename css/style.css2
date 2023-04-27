@@ -1,0 +1,180 @@
+body{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/e/e0/Madina-.jpg);
+    background-size: cover;
+}
+.body{
+  margin-top: 30px;
+}
+.page{
+    width: 400px;
+    height: 600px;
+    background: #000;
+    color: white;
+}
+.title{
+    margin-top: 30px;
+}
+.pp-reg{
+    margin-top: 20px;
+    width: 350px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.input-but{
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+
+    font-size: 20px;
+    border-radius: 5px;
+    border: 3px solid #Ffd700;
+    outline: none;
+    color: white;
+    background: #000;
+
+}
+input{
+    text-align: center;
+}
+.but{
+    background: #Ffd700;
+    cursor: pointer;
+}
+
+.but:active{
+  background: #967f00;
+}
+
+
+/*-------------------*/
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+.wrapper{
+  display: inline-flex;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+.wrapper .option{
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #Ffd700;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #Ffd700;
+  background: #Ffd700;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+
+
+
+/*--------------age--------------------*/
+
+
+
+.container{
+  width: 170px;
+  display: flex;
+  background-color: #000000;
+  border-radius: 45px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+  #my-input[type="number"]{
+  text-align: center;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: #Ffd700;
+  ;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  display: none;
+  margin: 0;
+}
+.button{
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+#decrement{
+  padding: 15px 5px 15px 25px;
+  border-radius: 45px 0 0 45px;
+}
+#increment{
+  padding: 15px 25px 15px 5px;
+  border-radius: 0 45px 45px 0;
+}
